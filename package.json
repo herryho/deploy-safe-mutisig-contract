@@ -1,20 +1,29 @@
 {
+  "name": "hardhat-project",
   "devDependencies": {
-    "@ethersproject/providers": "^5.7.2",
-    "@ethersproject/wallet": "^5.7.0",
-    "@gnosis.pm/safe-core-sdk": "^3.2.0",
-    "@gnosis.pm/safe-deployments": "^1.19.0",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.22.5"
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@safe-global/protocol-kit": "^4.0.1",
+    "@safe-global/safe-core-sdk-types": "^5.0.1",
     "@safe-global/api-kit": "^2.4.1",
-    "ethers": "^6.13.0"
+    "dotenv": "^16.4.5"
   },
   "scripts": {
-    "compile": "hardhat compile",
-    "test": "hardhat test",
-    "deploy": "node deploy-gnosis-safe.js"
+    "deploy-safe:testnet": "hardhat run scripts/deploy-safe.ts --network bscTestnet",
+    "deploy-safe:mainnet": "hardhat run scripts/deploy-safe.ts --network bscMainnet",
+    "propose-transaction:testnet": "hardhat run scripts/propose-transaction.ts --network bscTestnet",
+    "propose-transaction:mainnet": "hardhat run scripts/propose-transaction.ts --network bscMainnet",
+    "multisig-transfer:testnet": "hardhat run scripts/multisig-transfer.ts --network bscTestnet",
+    "multisig-transfer:mainnet": "hardhat run scripts/multisig-transfer.ts --network bscMainnet",
+    "multisig-transfer-approve:testnet": "hardhat run scripts/multisig-transfer-approve.ts --network bscTestnet",
+    "multisig-transfer-approve:mainnet": "hardhat run scripts/multisig-transfer-approve.ts --network bscMainnet",
+    "multisig-transfer-execution:testnet": "hardhat run scripts/multisig-transfer-execution.ts --network bscTestnet",
+    "multisig-transfer-execution:mainnet": "hardhat run scripts/multisig-transfer-execution.ts --network bscMainnet"
   }
 }

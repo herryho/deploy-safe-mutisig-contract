@@ -1,0 +1,21 @@
+{
+  "signedSafeTransaction": {
+    "to": "0x4223934E5303F69f5C2Fca251CaA07C07efB1512",
+    "value": "1000000000000000000",
+    "data": "0x",
+    "operation": 0,
+    "safeTxGas": "0",
+    "baseGas": "0",
+    "gasPrice": "0",
+    "gasToken": "0x0000000000000000000000000000000000000000",
+    "refundReceiver": "0x0000000000000000000000000000000000000000",
+    "nonce": 0,
+    "signatures": [
+      {
+        "signer": "0xdbf8daa421530e80a6b03c562fce5b9950c40a5e",
+        "data": "0x502cdd3014ab61b0fcd706fa294b6a92ca33698210f0a0433b76590c8a2b56bf1941befc1bfca5a3a8a9fcea9215db7e8f69260d9783fd804b7d1eddbbc49f401f"
+      }
+    ]
+  },
+  "safeTxHash": "0x60dab8afae78041a89858d32c7471d8cc156de33b0630bd83dd453c67f310832"
+}
